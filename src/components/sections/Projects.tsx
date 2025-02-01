@@ -12,6 +12,8 @@ export default function Projects() {
             title={project.title}
             description={project.description}
             tags={project.tech}
+            liveLink={project.liveLink}
+            devLink={project.devLink}
           />
         ))}
       </div>

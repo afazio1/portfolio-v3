@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -17,7 +18,7 @@ export default function About() {
           <p className="mt-4 text-[#89ddff]">Experience:</p>
           <ul className="list-disc list-inside mt-2 text-[#bb9af7]">
             <li>Incoming Production Engineer Intern @ Meta</li>
-            <li>Director of Engineering @ Bits of Good a Hack4Impact Chapter</li>
+            <li>Director of Engineering @ <Link className="text-[#89ddff] underline" href="https://bitsofgood.org/">Bits of Good</Link> a Hack4Impact Chapter</li>
             <li>Previously @ Ericsson</li>
           </ul>
         </Card>

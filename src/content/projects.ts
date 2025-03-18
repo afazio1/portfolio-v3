@@ -26,6 +26,13 @@ const projects: Project[] = [
     liveLink: "",
     devLink: "https://github.com/afazio1/web-crawler",
   },
+  {
+    title: "Obsidian Plugin: Markdown Blogger",
+    description: "A text editor plugin empowering developers to effortlessly publish markdown notes to their static sites.",
+    tech: ["TypeScript", "Node.js"],
+    liveLink: "https://obsidian.md/plugins?search=markdown%20blogger",
+    devLink: "https://github.com/afazio1/obsidian-markdown-blogger"
+  }
 ]
 
 export default projects;

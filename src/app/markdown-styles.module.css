@@ -1,0 +1,38 @@
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-2xl mt-12 mb-4 leading-snug font-semibold text-purple-blue;
+}
+
+.markdown h3 {
+  @apply text-xl mt-8 mb-4 leading-snug text-purple font-semibold;
+}
+
+.markdown ul {
+  @apply ml-4 list-disc;
+}
+
+.markdown ol {
+  @apply ml-8 list-decimal;
+}
+
+.markdown b,
+.markdown strong {
+  @apply text-blue font-bold;
+}
+
+.markdown blockquote {
+  @apply bg-background italic px-4 text-purple;
+}
+.markdown a {
+  @apply underline text-green;
+}

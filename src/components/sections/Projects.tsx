@@ -4,7 +4,7 @@ import projects from "@/content/projects"
 export default function Projects() {
   return (
     <>
-      <h2 className="text-[#7aa2f7] text-2xl">Projects</h2>
+      <h2 className="text-purple-blue text-2xl">Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard

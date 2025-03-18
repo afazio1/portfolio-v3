@@ -33,9 +33,9 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="min-h-screen bg-[#1a1b26] text-[#a9b1d6] p-4 md:p-8 font-mono">
+    <div className="min-h-screen bg-background text-purple-blue p-4 md:p-8 font-mono">
       {/* ASCII Art Banner */}
-      <pre className="text-[#bb9af7] text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
+      <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
         {`
 █████╗ ██╗     ███████╗██╗  ██╗ █████╗     ███████╗ █████╗ ███████╗██╗ ██████╗ 
 ██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔══██╗    ██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗
@@ -50,7 +50,7 @@ export default function Portfolio() {
       <nav className="my-8 flex flex-wrap gap-4">
         <Button
           variant="ghost"
-          className={`gap-2 ${selectedSection === "home" ? "text-[#7aa2f7]" : ""}`}
+          className={`gap-2 ${selectedSection === "home" ? "text-gray-white" : ""}`}
           onClick={() => setSelectedSection("home")}
         >
           <Terminal className="w-4 h-4" />
@@ -58,7 +58,7 @@ export default function Portfolio() {
         </Button>
         <Button
           variant="ghost"
-          className={`gap-2 ${selectedSection === "about" ? "text-[#7aa2f7]" : ""}`}
+          className={`gap-2 ${selectedSection === "about" ? "text-gray-white" : ""}`}
           onClick={() => setSelectedSection("about")}
         >
           <User className="w-4 h-4" />
@@ -66,7 +66,7 @@ export default function Portfolio() {
         </Button>
         <Button
           variant="ghost"
-          className={`gap-2 ${selectedSection === "projects" ? "text-[#7aa2f7]" : ""}`}
+          className={`gap-2 ${selectedSection === "projects" ? "text-gray-white" : ""}`}
           onClick={() => setSelectedSection("projects")}
         >
           <Code className="w-4 h-4" />

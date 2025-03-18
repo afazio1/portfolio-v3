@@ -25,14 +25,14 @@ export default function Home() {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-[#7aa2f7] text-2xl md:text-3xl">Hello, World! 👋</h1>
-      <p className="text-lg">
-        I&apos;m a full-stack developer, college student, and content creator driven by my love for learning.
+      <h1 className="text-purple-blue text-2xl md:text-3xl">Hello, World! 👋</h1>
+      <p className="text-lg text-gray-white">
+        Web and systems enthusiast
       </p>
       <div className="flex gap-4">
         {socials.map((social) => (
           <Link href={social.href} key={social.title}>
-            <Button variant="outline" className="gap-2">
+            <Button variant="outline" className="gap-2 text-purple">
               {social.icon}
               {social.title}
             </Button>

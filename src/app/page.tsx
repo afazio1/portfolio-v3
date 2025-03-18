@@ -1,12 +1,11 @@
 "use client"
 
 import { useState } from "react"
-import { Terminal, Mail, User, Code, Folder, BookOpen } from "lucide-react"
+import { Terminal, User, Code, BookOpen } from "lucide-react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Home from "@/components/sections/Home"
-import ProjectCard from "@/components/ProjectCard"
 import About from "@/components/sections/About"
 import Projects from "@/components/sections/Projects"
 
@@ -35,7 +34,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background text-purple-blue p-4 md:p-8 font-mono">
       {/* ASCII Art Banner */}
-      <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
+      {/* <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
         {`
 █████╗ ██╗     ███████╗██╗  ██╗ █████╗     ███████╗ █████╗ ███████╗██╗ ██████╗ 
 ██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔══██╗    ██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗
@@ -44,7 +43,30 @@ export default function Portfolio() {
 ██║  ██║███████╗███████╗██╔╝ ██╗██║  ██║    ██║     ██║  ██║███████╗██║╚██████╔╝
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
 `}
+      </pre> */}
+      <div className="flex flex-row flex-wrap">
+        <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
+        {`
+█████╗ ██╗     ███████╗██╗  ██╗ █████╗      
+██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔══██╗    
+███████║██║     █████╗   ╚███╔╝ ███████║   
+██╔══██║██║     ██╔══╝   ██╔██╗ ██╔══██║  
+██║  ██║███████╗███████╗██╔╝ ██╗██║  ██║  
+╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝  
+`}
       </pre>
+      <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
+        {`
+   ███████╗ █████╗ ███████╗██╗ ██████╗ 
+    ██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗
+    █████╗  ███████║  ███╔╝ ██║██║   ██║
+    ██╔══╝  ██╔══██║ ███╔╝  ██║██║   ██║
+    ██║     ██║  ██║███████╗██║╚██████╔╝
+    ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
+`}
+      </pre>
+      </div>
+      
 
       {/* Navigation */}
       <nav className="my-8 flex flex-wrap gap-4">

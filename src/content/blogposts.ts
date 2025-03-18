@@ -4,4 +4,5 @@ export interface BlogPost {
   date: string
   description: string
   tags: string[]
+  content: string
 }

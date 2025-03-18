@@ -11,7 +11,7 @@ export default function Projects() {
             key={project.title}
             title={project.title}
             description={project.description}
-            tags={project.tech}
+            tags={project.tags}
             liveLink={project.liveLink}
             devLink={project.devLink}
           />

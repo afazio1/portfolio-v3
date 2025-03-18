@@ -29,10 +29,10 @@ export default function Home() {
       <p className="text-lg text-gray-white">
         Web and systems enthusiast
       </p>
-      <div className="flex gap-4">
+      <div className="flex gap-4 flex-wrap">
         {socials.map((social) => (
           <Link href={social.href} key={social.title}>
-            <Button variant="outline" className="gap-2 text-purple">
+            <Button variant="outline" className="gap-2 text-purple border-muted hover:border-gray-white">
               {social.icon}
               {social.title}
             </Button>

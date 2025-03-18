@@ -1,12 +1,10 @@
 import { Card } from "@/components/ui/card"
 import { ChevronLeft } from "lucide-react"
 import Link from "next/link"
-import { BlogPost } from "@/content/blogposts"
 import { getAllPosts, getPostBySlug } from "@/lib/api";
 import { markdownToHtml } from "@/lib/utils";
 import { Metadata } from "next"
 import markdownStyles from "../../markdown-styles.module.css";
-import { notFound } from "next/navigation";
 
 type Params = {
   params: Promise<{
@@ -34,7 +32,7 @@ export async function generateStaticParams() {
   const posts = getAllPosts();
 
   return posts.map((post) => ({
-    slug: post.slug,
+    slug: post.id,
   }));
 }
 

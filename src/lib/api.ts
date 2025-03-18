@@ -1,7 +1,7 @@
-import { BlogPost } from "@/content/blogposts";
 import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
+import type { BlogPost } from "@/content/blogposts";
 
 const postsDirectory = join(process.cwd(), "src/content/_posts");
 
@@ -15,15 +15,15 @@ export function getPostBySlug(slug: string) {
   let fileContents;
   try {
     fileContents = fs.readFileSync(fullPath, "utf8");
-  } catch (e) {
+  } catch {
     return null; // file not found
   }
   const { data, content } = matter(fileContents);
 
-  return { ...data, slug: realSlug, content } as BlogPost;
+  return { ...data, content } as BlogPost;
 }
 
-export function getAllPosts(): BlogPost[] {
+export function getAllPosts() {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug))

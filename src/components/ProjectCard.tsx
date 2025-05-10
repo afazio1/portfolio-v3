@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 import { Folder, ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 
 export default function ProjectCard({ 
   title, 
@@ -9,8 +10,14 @@ export default function ProjectCard({
   liveLink,
   devLink 
 }: { title: string; description: string; tags: string[], liveLink: string, devLink: string}) {
+  const router = useRouter();
+  
+  const handleCardClick = () => {
+    router.push(devLink);
+  }
+
   return (
-    <Card className="p-6 bg-card border-card-border hover:border-card-border-hover transition-colors">
+    <Card onClick={handleCardClick} className="p-6 bg-card border-card-border hover:border-card-border-hover transition-colors">
       <div className="flex items-start gap-3 h-full">
         <Folder className="flex-none w-5 h-5 text-purple-blue" />
         <div className="flex flex-col justify-between h-full gap-1">
@@ -25,9 +32,9 @@ export default function ProjectCard({
               </span>
             ))}
           </div>
-          <div className="flex flex-row-reverse gap-1">
-            { liveLink && <Link href={liveLink}><ExternalLink className="w-5 h-5"/></Link>}
-            { devLink && <Link href={devLink}><Github className="w-5 h-5"/></Link>}
+          <div className="flex flex-row-reverse gap-2">
+            { liveLink && <Link href={liveLink} onClick={(e) => e.stopPropagation()}><ExternalLink className="w-6 h-6"/></Link>}
+            { devLink && <Link href={devLink} onClick={(e) => e.stopPropagation()}><Github className="w-6 h-6"/></Link>}
           </div>
         </div>
       </div>

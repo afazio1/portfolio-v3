@@ -44,7 +44,7 @@ export default function Portfolio() {
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
 `}
       </pre> */}
-      <div className="flex flex-row flex-wrap">
+      <div className="flex flex-row flex-wrap sm:justify-start justify-center">
         <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
         {`
 █████╗ ██╗     ███████╗██╗  ██╗ █████╗      
@@ -66,13 +66,12 @@ export default function Portfolio() {
 `}
       </pre>
       </div>
-      
 
       {/* Navigation */}
       <nav className="my-8 flex flex-wrap gap-4">
         <Button
           variant="ghost"
-          className={`gap-2 ${selectedSection === "home" ? "text-gray-white" : ""}`}
+          className={`gap-2 ${selectedSection === "home" ? "text-purple" : ""}`}
           onClick={() => setSelectedSection("home")}
         >
           <Terminal className="w-4 h-4" />
@@ -80,7 +79,7 @@ export default function Portfolio() {
         </Button>
         <Button
           variant="ghost"
-          className={`gap-2 ${selectedSection === "about" ? "text-gray-white" : ""}`}
+          className={`gap-2 ${selectedSection === "about" ? "text-purple" : ""}`}
           onClick={() => setSelectedSection("about")}
         >
           <User className="w-4 h-4" />
@@ -88,7 +87,7 @@ export default function Portfolio() {
         </Button>
         <Button
           variant="ghost"
-          className={`gap-2 ${selectedSection === "projects" ? "text-gray-white" : ""}`}
+          className={`gap-2 ${selectedSection === "projects" ? "text-purple" : ""}`}
           onClick={() => setSelectedSection("projects")}
         >
           <Code className="w-4 h-4" />

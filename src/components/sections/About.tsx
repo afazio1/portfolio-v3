@@ -17,7 +17,7 @@ export default function About() {
           </div>
           <p className="mt-4 text-blue">Experience:</p>
           <ul className="list-disc list-inside mt-2 text-purple">
-            <li>Incoming Production Engineer Intern @ Meta</li>
+            <li>Production Engineer Intern @ Meta</li>
             <li>Director of Engineering @ <Link className="text-blue underline" href="https://bitsofgood.org/">Bits of Good</Link> a Hack4Impact Chapter</li>
             <li>Previously @ Ericsson</li>
           </ul>

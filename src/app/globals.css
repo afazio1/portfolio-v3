@@ -3,9 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #1a1b26;
+  /* --background: #1a1b26; */
+  --background: #0F1019;
 
-  --card: #1f2335;
+  --card: #0F1019;
   --card-foreground: 169, 177, 214;
   --card-border: #292e42;
   --card-border-hover: #7aa2f7;

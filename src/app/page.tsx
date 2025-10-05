@@ -65,10 +65,8 @@ export default function Portfolio() {
     ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
 `}
       </pre>
-      </div>
-
       {/* Navigation */}
-      <nav className="my-8 flex flex-wrap gap-4">
+      <nav className="mb-12 flex flex-wrap justify-between lg:w-2/3">
         <Button
           variant="ghost"
           className={`gap-2 ${selectedSection === "home" ? "text-purple" : ""}`}
@@ -100,6 +98,8 @@ export default function Portfolio() {
           </Button>
         </Link>
       </nav>
+      </div>
+
 
       {/* Content */}
       <motion.div

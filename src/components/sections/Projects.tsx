@@ -3,8 +3,8 @@ import projects from "@/content/projects"
 
 export default function Projects() {
   return (
-    <>
-      <h2 className="text-purple-blue text-2xl">Projects</h2>
+    <div className="space-y-3">
+      <h2 className="text-gray-white text-2xl">Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
           <ProjectCard
@@ -17,6 +17,6 @@ export default function Projects() {
           />
         ))}
       </div>
-    </>
+    </div>
   )
 }

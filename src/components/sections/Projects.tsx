@@ -3,7 +3,7 @@ import projects from "@/content/projects"
 
 export default function Projects() {
   return (
-    <div className="space-y-3">
+    <div className="space-y-3" id="#projects">
       <h2 className="text-gray-white text-2xl">Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (

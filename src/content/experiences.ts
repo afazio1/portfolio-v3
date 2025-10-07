@@ -4,6 +4,7 @@ export interface Experience {
   description: string
   startDate: string
   endDate: string
+  tags?: string[]
 }
 
 const experiences: Experience[] = [
@@ -13,7 +14,8 @@ const experiences: Experience[] = [
     description:
     "Built infrastructure-as-code and testing services in Go and Python to manage 150K+ packages and improve reliability across 200+ server fleets.",
     startDate: "May 2025",
-    endDate: "Aug 2025"
+    endDate: "Aug 2025",
+    tags: ["Go", "Python", "Chef"]
   },
   {
     company: "Ericsson",
@@ -21,7 +23,8 @@ const experiences: Experience[] = [
     description:
     "Automated employee onboarding, integrated 1,000+ legacy schemas, and built educational tools improving efficiency for 100K+ employees.",
     startDate: "Jun 2023",
-    endDate: "Dec 2024"
+    endDate: "Dec 2024",
+    tags: ["Java", "Python", "TypeScript"]
   },
   {
     company: "LogicomUSA",
@@ -29,7 +32,8 @@ const experiences: Experience[] = [
     description:
     "Developed AWS-based REST APIs and automation scripts that reduced manual work and improved process efficiency.",
     startDate: "May 2023",
-    endDate: "Jun 2023"
+    endDate: "Jun 2023",
+    tags: ["AWS", "PHP", "JavaScript"]
   },
   {
     company: "Bits of Good",
@@ -37,7 +41,8 @@ const experiences: Experience[] = [
     description:
     "Led a team building a Next.js web app for a nonprofit while establishing CI/CD pipelines and improving system scalability.",
     startDate: "Aug 2023",
-    endDate: "Present"
+    endDate: "Present",
+    tags: ["Next.js", "MongoDB"]
   },
   {
     company: "Georgia Tech",
@@ -45,7 +50,8 @@ const experiences: Experience[] = [
     description:
     "Mentored 400+ students through labs and technical topics in Georgia Tech’s Operating Systems course.",
     startDate: "Jan 2025",
-    endDate: "Present"
+    endDate: "Present",
+    tags: ["C", "GDB"]
   }
 ]
 

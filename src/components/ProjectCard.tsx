@@ -17,7 +17,7 @@ export default function ProjectCard({
   }
 
   return (
-    <Card onClick={handleCardClick} className="p-6 bg-card border-card-border hover:border-card-border-hover transition-colors h-52">
+    <Card onClick={handleCardClick} className="p-6 bg-card border-card-border hover:border-card-border-hover transition-colors min-h-52">
       <div className="flex flex-col justify-between h-full">
         <div className="flex flex-row gap-3">
           <Folder className="flex-none w-5 h-5 text-purple-blue" />

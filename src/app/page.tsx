@@ -1,14 +1,13 @@
 "use client"
 
-import { useState } from "react"
 import { User, Code, BookOpen, Briefcase } from "lucide-react"
-import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Home from "@/components/sections/Home"
 import About from "@/components/sections/About"
 import Projects from "@/components/sections/Projects"
 import Experience from "@/components/sections/Experience"
+import Footer from "@/components/sections/Footer"
 
 export default function Portfolio() {
   const scrollTo = (id: string) => {
@@ -16,39 +15,11 @@ export default function Portfolio() {
     section.scrollIntoView({behavior: "smooth"});
   }
 
-  const tabs = {
-    experience: {
-      title: "experience",
-      content: <Experience />,
-    },
-    about: {
-      title: "about",
-      content: <About />,
-    },
-    projects: {
-      title: "projects",
-      content: <Projects />,
-    },
-    blog: {
-      title: "blog",
-      content: undefined,
-    }
-  }
 
   return (
     <div className="min-h-screen bg-background text-purple-blue p-4 md:p-8 font-mono">
       {/* ASCII Art Banner */}
-      {/* <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
-        {`
-█████╗ ██╗     ███████╗██╗  ██╗ █████╗     ███████╗ █████╗ ███████╗██╗ ██████╗ 
-██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔══██╗    ██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗
-███████║██║     █████╗   ╚███╔╝ ███████║    █████╗  ███████║  ███╔╝ ██║██║   ██║
-██╔══██║██║     ██╔══╝   ██╔██╗ ██╔══██║    ██╔══╝  ██╔══██║ ███╔╝  ██║██║   ██║
-██║  ██║███████╗███████╗██╔╝ ██╗██║  ██║    ██║     ██║  ██║███████╗██║╚██████╔╝
-╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
-`}
-      </pre> */}
-      <div className="flex flex-row flex-wrap sm:justify-start justify-center">
+      <div className="flex flex-row flex-wrap sm:justify-start justify-center overflow-x-hidden">
         <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
         {`
 █████╗ ██╗     ███████╗██╗  ██╗ █████╗      
@@ -70,14 +41,14 @@ export default function Portfolio() {
 `}
       </pre>
       {/* Navigation */}
-      <nav className="mb-12 flex flex-wrap justify-between lg:w-2/3">
+      <nav className="mb-12 flex flex-wrap justify-between w-full lg:w-3/5">
         <Button
           variant="ghost"
           className={`gap-2 hover:text-purple`}
           onClick={() => scrollTo("#experience")}
         >
           <Briefcase className="w-4 h-4" />
-            experience
+            ~/experience
         </Button>
         <Button
           variant="ghost"
@@ -109,25 +80,9 @@ export default function Portfolio() {
         <Experience />
         <Projects />
         <About/>
+        <Footer />
       </div>
 
-      {/* Content */}
-      {/* <motion.div */}
-      {/*   key={selectedSection} */}
-      {/*   initial={{ opacity: 0, y: 20 }} */}
-      {/*   animate={{ opacity: 1, y: 0 }} */}
-      {/*   transition={{ duration: 0.3 }} */}
-      {/* > */}
-      {/*   {selectedSection === "home" && tabs.home.content} */}
-      {/**/}
-      {/*   {selectedSection === "about" && tabs.about.content} */}
-      {/**/}
-      {/*   {selectedSection === "projects" && ( */}
-      {/*     <div className="space-y-6"> */}
-      {/*       {tabs.projects.content} */}
-      {/*     </div> */}
-      {/*   )} */}
-      {/* </motion.div> */}
     </div>
   )
 }

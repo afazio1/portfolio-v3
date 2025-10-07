@@ -45,6 +45,14 @@ export default function Portfolio() {
         <Button
           variant="ghost"
           className={`gap-2 hover:text-purple`}
+          onClick={() => scrollTo("#about")}
+        >
+          <User className="w-4 h-4" />
+          ~/about
+        </Button>
+        <Button
+          variant="ghost"
+          className={`gap-2 hover:text-purple`}
           onClick={() => scrollTo("#experience")}
         >
           <Briefcase className="w-4 h-4" />
@@ -58,14 +66,6 @@ export default function Portfolio() {
           <Code className="w-4 h-4" />
           ~/projects
         </Button>
-        <Button
-          variant="ghost"
-          className={`gap-2 hover:text-purple`}
-          onClick={() => scrollTo("#about")}
-        >
-          <User className="w-4 h-4" />
-          ~/about
-        </Button>
         <Link href="/blog">
           <Button variant="ghost" className="gap-2 hover:text-purple">
             <BookOpen className="w-4 h-4" />
@@ -77,9 +77,9 @@ export default function Portfolio() {
 
       <div className="space-y-12">
         <Home/>
+        <About />
         <Experience />
         <Projects />
-        <About/>
         <Footer />
       </div>
 

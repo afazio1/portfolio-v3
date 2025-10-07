@@ -19,9 +19,10 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background text-purple-blue p-4 md:p-8 font-mono">
       {/* ASCII Art Banner */}
-      <div className="flex flex-row flex-wrap sm:justify-start justify-center overflow-x-hidden">
-        <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
-        {`
+      <div className="flex flex-col flex-wrap items-start overflow-x-hidden w-fit">
+        <div className="flex flex-row flex-wrap">
+          <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
+            {`
 █████╗ ██╗     ███████╗██╗  ██╗ █████╗      
 ██╔══██╗██║     ██╔════╝╚██╗██╔╝██╔══██╗    
 ███████║██║     █████╗   ╚███╔╝ ███████║   
@@ -29,50 +30,51 @@ export default function Portfolio() {
 ██║  ██║███████╗███████╗██╔╝ ██╗██║  ██║  
 ╚═╝  ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝  
 `}
-      </pre>
-      <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
-        {`
-   ███████╗ █████╗ ███████╗██╗ ██████╗ 
-    ██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗
-    █████╗  ███████║  ███╔╝ ██║██║   ██║
-    ██╔══╝  ██╔══██║ ███╔╝  ██║██║   ██║
-    ██║     ██║  ██║███████╗██║╚██████╔╝
-    ╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
+          </pre>
+          <pre className="text-green text-xs md:text-sm lg:text-base whitespace-pre overflow-x-auto">
+            {`
+███████╗ █████╗ ███████╗██╗ ██████╗ 
+██╔════╝██╔══██╗╚══███╔╝██║██╔═══██╗
+█████╗  ███████║  ███╔╝ ██║██║   ██║
+██╔══╝  ██╔══██║ ███╔╝  ██║██║   ██║
+██║     ██║  ██║███████╗██║╚██████╔╝
+╚═╝     ╚═╝  ╚═╝╚══════╝╚═╝ ╚═════╝ 
 `}
-      </pre>
-      {/* Navigation */}
-      <nav className="mb-12 flex flex-wrap justify-between w-full lg:w-3/5">
-        <Button
-          variant="ghost"
-          className={`gap-2 hover:text-purple`}
-          onClick={() => scrollTo("#about")}
-        >
-          <User className="w-4 h-4" />
-          ~/about
-        </Button>
-        <Button
-          variant="ghost"
-          className={`gap-2 hover:text-purple`}
-          onClick={() => scrollTo("#experience")}
-        >
-          <Briefcase className="w-4 h-4" />
-            ~/experience
-        </Button>
-        <Button
-          variant="ghost"
-          className={`gap-2 hover:text-purple`}
-          onClick={() => scrollTo("#projects")}
-        >
-          <Code className="w-4 h-4" />
-          ~/projects
-        </Button>
-        <Link href="/blog">
-          <Button variant="ghost" className="gap-2 hover:text-purple">
-            <BookOpen className="w-4 h-4" />
-            ~/blog
+          </pre>
+        </div>
+        {/* Navigation */}
+        <nav className="mb-12 flex flex-wrap w-full justify-between">
+          <Button
+            variant="ghost"
+            className={`gap-2 hover:text-purple`}
+            onClick={() => scrollTo("#about")}
+          >
+            <User className="w-4 h-4" />
+            ~/about
           </Button>
-        </Link>
-      </nav>
+          <Button
+            variant="ghost"
+            className={`gap-2 hover:text-purple`}
+            onClick={() => scrollTo("#experience")}
+          >
+            <Briefcase className="w-4 h-4" />
+            ~/experience
+          </Button>
+          <Button
+            variant="ghost"
+            className={`gap-2 hover:text-purple`}
+            onClick={() => scrollTo("#projects")}
+          >
+            <Code className="w-4 h-4" />
+            ~/projects
+          </Button>
+          <Link href="/blog">
+            <Button variant="ghost" className="gap-2 hover:text-purple">
+              <BookOpen className="w-4 h-4" />
+              ~/blog
+            </Button>
+          </Link>
+        </nav>
       </div>
 
       <div className="space-y-12">

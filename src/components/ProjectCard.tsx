@@ -23,7 +23,7 @@ export default function ProjectCard({
           <Folder className="flex-none w-5 h-5 text-purple-blue" />
           <div>
             <h3 className="text-purple-blue font-semibold">{title}</h3>
-            <p className="mt-2 text-sm">{description}</p>
+            <p className="mt-2 text-sm text-gray-white">{description}</p>
           </div>
         </div>
         <div className="flex flex-col justify-between">

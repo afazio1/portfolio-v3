@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="max-w-full">
       <body className={`${inter.variable} ${jetbrainsMono.variable}`}>{children}</body>
     </html>
   )

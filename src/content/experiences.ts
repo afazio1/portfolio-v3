@@ -12,7 +12,7 @@ const experiences: Experience[] = [
     company: "Meta",
     position: "Production Engineer Intern",
     description:
-    "Built infrastructure-as-code and testing services in Go and Python to manage 150K+ packages and improve reliability across 200+ server fleets.",
+    "Built infrastructure-as-code and testing services in Go and Python to manage packages and improve reliability across server fleets.",
     startDate: "May 2025",
     endDate: "Aug 2025",
     tags: ["Go", "Python", "Chef"]
@@ -21,7 +21,7 @@ const experiences: Experience[] = [
     company: "Ericsson",
     position: "Software Engineer Intern",
     description:
-    "Automated employee onboarding, integrated 1,000+ legacy schemas, and built educational tools improving efficiency for 100K+ employees.",
+    "Reduced employee onboarding time (3.5 hrs → 5 mins) by developing an automation framework to parse emails, create support tickets, and display onboarding progress.",
     startDate: "Jun 2023",
     endDate: "Dec 2024",
     tags: ["Java", "Python", "TypeScript"]
@@ -39,7 +39,7 @@ const experiences: Experience[] = [
     company: "Bits of Good",
     position: "Engineering Manager",
     description:
-    "Led a team building a Next.js web app for a nonprofit while establishing CI/CD pipelines and improving system scalability.",
+    "Led a team to maintain and improve GT Scheduler, a course scheduling web app used by 22K students monthly.",
     startDate: "Aug 2023",
     endDate: "Present",
     tags: ["Next.js", "MongoDB"]

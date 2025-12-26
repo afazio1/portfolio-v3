@@ -6,7 +6,7 @@ export default function Projects() {
     <div className="space-y-3" id="#projects">
       <h2 className="text-gray-white text-2xl">Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
-        {projects.map((project) => (
+        {projects.filter((project) => !project.hidden).map((project) => (
           <ProjectCard
             key={project.title}
             title={project.title}

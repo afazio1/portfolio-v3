@@ -4,9 +4,17 @@ interface Project {
   tags: string[]
   liveLink: string
   devLink: string
+  hidden?: boolean
 }
 
 const projects: Project[] = [
+  {
+    title: "GT Scheduler",
+    description: "Georgia Tech course scheduling application with 22K monthly active users.",
+    tags: ["React.js", "Firebase", "Python"],
+    liveLink: "https://www.gt-scheduler.org/",
+    devLink: "https://github.com/gt-scheduler",
+  },
   {
     title: "Canine Assistants",
     description: "Web database to track service dog behavior and medical concerns.",
@@ -33,7 +41,8 @@ const projects: Project[] = [
     description: "A text editor plugin empowering developers to effortlessly publish markdown notes to their static sites.",
     tags: ["TypeScript", "Node.js"],
     liveLink: "https://obsidian.md/plugins?search=markdown%20blogger",
-    devLink: "https://github.com/afazio1/obsidian-markdown-blogger"
+    devLink: "https://github.com/afazio1/obsidian-markdown-blogger",
+    hidden: true
   }
 ]
 

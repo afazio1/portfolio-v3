@@ -9,9 +9,9 @@ export default function About() {
           <h3 className="mb-3 font-semibold">$ cat about.txt</h3>
           <div className="text-gray-white">
             <ul className="flex flex-col ml-5">
-              <li>🐝 I&apos;m an undergraduate at the Georgia Institute of Technology studying Computer Science</li>
-              <li>👾 I&apos;m pursuing concentrations in Systems & Architecture and Networking</li>
-              <li>👩‍💻 Most of my experience is in full stack development and systems programming</li>
+              <li>👾 Production Engineer at Meta in NYC</li>
+              <li>🐝 BS in CS from Georgia Tech</li>
+              <li>👩‍💻 Interests in web, systems, and infra</li>
             </ul>
           </div>
         </Card>

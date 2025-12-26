@@ -18,11 +18,11 @@ export default function ExperienceCard({
         <div className="flex flex-row gap-3">
           <Briefcase className="h-5 w-5"/>
           <div className="w-full">
-            <div className="flex flex-row justify-between">
+            <div className="flex md:flex-row justify-between flex-col">
               <h3 className="text-purple-blue font-semibold">{company}: {position}</h3>
               <p className="text-gray-white">{startDate} - {endDate}</p>
             </div>
-            <div className="flex flex-row justify-start gap-3 mt-3">
+            <div className="flex flex-row justify-start gap-3 mt-3 md:w-3/4 w-full">
               <p className="text-sm text-gray-white">{description}</p>
             </div>
           </div>
